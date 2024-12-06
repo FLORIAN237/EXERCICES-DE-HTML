@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice de HTML</title>
+</head>
+<body style="background-color:#00ffff;">
+ <center><h1>Corrigé des exercices de HTML</h1></center>
+ <hr style="width:80%; height: 2px;"> 
+ <h2 style="text-align:left ;"><i>Exercice 2</i></h2>
+ <ul>
+    <li><h1>Titre 1</h1></li>
+    <li><h1>Titre 2</h1></li>
+</ul>
+ <ol>    
+ <ul>
+<li><h2>Section 1</h2></li>
+<li><h2>Section 2</h2></li>   
+</ul>
+<ol>
+<ul style="list-style-type:square;">
+    <li><h3>Sous-section 1</h3></li>
+    <li><h3>Sous-section 2</h3></li>
+</ol>
+</ul>
+ </ol>
+ <ul> 
+<li><h1>Titre 3</h1></li>
+</ul>
+<ol>
+ <ul>
+ <li><h2>Section 1</h2></li>
+ <li><h2>Section 2</h2></li>
+</ul>
+</ol>
+<center>
+    <table border="1" width="70%">
+        <tr>
+            <td colspan="3"><center>Cette cellule occupe toute la largeur du tableau</center></td>
+        </tr>
+        <tr>
+            <td width="33%" height="33px" align="left">Alignement à gauche</td>
+            <td width="33%" height="33px"><center>Texte centré</center></td>
+            <td width="33%" height="33px" align="right">Alignement à droite</td>
+        </tr>
+        <tr>
+            <td width="33%" height="33px" rowspan="2">Cette cellule occupe deux lignes</td>
+            <td width="33%" height="33px"><font color="red">Ecrit en rouge</td></font>
+            <td width="33%" height="33px"></td>
+        </tr>
+        <tr>
+            <td width="33%" height="33px">Je ne définis que</td>
+            <td width="33%" height="33px">Deux cellules sur cette ligne</td>
+        </tr>
+        <tr>
+             <td width="33%" height="33px" colspan="2">Fusion des deux cellules</td>
+             <td width="33%" height="33px" bgcolor="orange"></td>
+         </tr>
+    </table>
+    <br><br>
+</center>
+<div>
+<font class="p1" face="Comic Sans MS">J'utilise la police Comic sans MS</font><br>
+<br>
+<font class="p2" face="Arial">J'utilise la police Arial</font><br>
+<br>
+<font class="p3" face="Verdana">J'utilise la police Verdana</font><br>
+</div>
+<br><br>
+
+ <fieldset style="border-radius:20px; width: 50%; margin: 0 auto;"><br>
+    <legend><strong>Vos coordonnées</strong></legend>
+<form " method="post" action="traitement.php"><br>
+    <label style="padding-right: 90px;" for="Votre Nom">Nom:</label>
+    <input type="text" placeholder="votre nom"><br>
+    <br>
+    <label style="padding-right: 75px;" for="Votre Prenom">Prénom:</label>
+    <input type="text" placeholder="votre prénom"><br>
+    <br>
+    <label style="padding-right: 9px;" for="Votre date de naissance">Date de naissance:</label>
+    <input type="text" placeholder="JJ/mm/aaaa"><br>
+    <br>
+    <label style="padding-right: 93px;" for="Votre Mail">Mail:</label>
+    <input type="text" placeholder="votre mail"><br>
+    <br>
+    <label style="padding-right: 65px;" for="votre site">Votre site:</label>
+    <input type="text"><br>
+    <br>
+    <label style="padding-right: 58px;" for="code">Votre code</code>:</label>
+    <input type="text"><br>
+    <br>
+        Genre:
+        <span style="margin: 82px;">
+        <input type="radio" name="age" value="mineur" id="majeur"/>
+        <label for="mineur">Homme</label>
+    </span>
+        <ol>
+        <span style="margin: 95px;" >  
+        <input type="radio" name="age" value="mineur" id="majeur"/>
+        <label for="mineur">femme</label><br>
+    </span>
+        </ol>
+    Pays:
+    <span style="margin: 97px;" >
+    <select name="pays" id="">pays
+        <optgroup label="Votre pays">
+            <option value="Votre pays">Votre pays</option>
+        </optgroup>
+    </select>
+</span>
+</fieldset>
+    <br>
+    <fieldset style="border-radius:20px; width: 50%; margin: 0 auto;">
+        <legend><strong>Vos goûts</strong></legend>
+    <br><br>
+    <input type="checkbox" name="age" value="mineur" id="majeur"/>
+    <label for="mineur">Tartes aux fraises à la crème d'amandes</label><br>
+    <input type="checkbox" name="age" value="mineur" id="majeur"/>
+    <label for="mineur">Tartes aux prunes </label><br>
+    <input type="checkbox" name="age" value="mineur" id="majeur"/>
+    <label for="mineur">Tartes rustique aux mirabelles de Lorraine, noisettes et miel</label><br>
+    <textarea rows="10" cols="50" placeholder="Décrivez vos goûts en details" name="details" id="details"></textarea>
+</fieldset>
+    <br>
+     <fieldset style="border-radius:20px;width: 50%; margin: 0 auto; ">
+        <legend><strong>Envoyez nous votre photo</strong></legend>
+    <br><br>
+    <input type="file" id="fichier" name="fichier">
+    <br><br>
+    <input type="reset" value="Effacer">
+    <input type="submit" value="Envoyer">
+</fieldset >
+<br><br>
+<fieldset style=" width: 50%; margin: 0 auto; border: 5; border-color: black;">
+    <legend>Coordonnées</legend><br>
+    <strong>Civilité</strong>
+    <span style="margin: 82px;">
+    <input type="radio" name="age" value="mineur" id="majeur"/>
+    <label for="mineur">Mademoiselle</label>
+    <input type="radio" name="age" value="mineur" id="majeur"/>
+    <label for="mineur">Madame</label>
+    <input type="radio" name="age" value="mineur" id="majeur"/>
+    <label for="mineur">Monsieur</label><br>
+    <br>
+    <label style="padding-right:40px;" for="code"><strong>Nom / Prénom</strong></label>
+    <input type="text" size="50"><br>
+    <br>
+    <span>
+    <strong style="position: relative; top:-10px;">Adresse</strong>
+</span>
+    <span style="margin: 87px;">
+ <textarea  style="padding-top: 10px;"  rows="1" cols="50" placeholder="Rue No Boite postale"></textarea>
+</span>
+<br>
+<label style="position: relative; top: 10px;" for="code"><strong>code postal/</strong></label><br>
+<label style="position: relative; top: 10px;" for="code"><strong>Localité/</strong></label><br>
+<label style="position: relative; top: 10px;" for="code"><strong>Gouvernorat</strong></label>
+<span style="margin: 27px;"></span>
+<input type="text" size="10">
+<input type="text" size="16">
+</span>
+    <span style="margin: -24px; position: relative; top: -5px; " >
+    <select name="pays" id="">pays
+        <optgroup label="Votre pays">
+            <option value="Votre pays">Jendouba</option>
+        </optgroup>
+    </select>
+</span>
+<br><br>
+<strong>Pays</strong>
+<span style="margin: 110px " >
+    <select name="pays" id="">pays
+        <optgroup label="Votre pays">
+            <option value="Votre pays">Votre pays</option>
+        </optgroup>
+    </select>
+</span>
+<br><br>
+<strong>Plateforme(s)</strong>
+<span style="margin: 50px " >
+    <input type="checkbox" name="age" value="mineur" id="majeur"/>
+    <label for="mineur">Windows</label>
+    <input type="checkbox" name="age" value="mineur" id="majeur"/>
+    <label for="mineur">Macintosh</label>
+    <input type="checkbox" name="age" value="mineur" id="majeur"/>
+    <label for="mineur">Unix</label><br>
+</span>   
+<br><br>
+
+<strong style="position: relative; top:50px;" >Application(s)</strong>
+<br><br><br>
+<span style="margin: 72px "></span>
+    <select id="search" name="search" size="5">
+        <option value="option1">Bureautique</option>
+        <option value="option2">DAO</option>
+        <option value="option3">Statistiques</option>
+        <option value="option4">SGBD</option>
+        <option value="option5">Internet</option><br>
+    </select><br>
+    <br>
+    <span style="margin: 80px;" ></span>
+    <button type="submit">Soumettre le formulaire</button>
+    <button type="reset">Effacer</button>
+</fieldset>
+</body>
+</html>
