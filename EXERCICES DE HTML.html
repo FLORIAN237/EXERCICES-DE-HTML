@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="Stylecss.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice de HTML</title>
 </head>
@@ -60,10 +61,15 @@
     </table>
     <br><br>
 </center>
-<font face="Comic Sans MS" >J'utilise la police Comic sans MS</font><br>
-<font face="Arial">J'utilise la police Arial</font><br>
-<font face="Verdana">J'utilise la police Verdana</font><br>
+<div>
+<font class="p1" face="Comic Sans MS">J'utilise la police Comic sans MS</font><br>
+<br>
+<font class="p2" face="Arial">J'utilise la police Arial</font><br>
+<br>
+<font class="p3" face="Verdana">J'utilise la police Verdana</font><br>
+</div>
 <br><br>
+
  <fieldset style="border-radius:20px; width: 50%; margin: 0 auto;"><br>
     <legend><strong>Vos coordonnées</strong></legend>
 <form " method="post" action="traitement.php"><br>
@@ -91,7 +97,7 @@
         <label for="mineur">Homme</label>
     </span>
         <ol>
-        <span style="margin: 90px;" >  
+        <span style="margin: 95px;" >  
         <input type="radio" name="age" value="mineur" id="majeur"/>
         <label for="mineur">femme</label><br>
     </span>
@@ -167,7 +173,7 @@
 <span style="margin: 110px " >
     <select name="pays" id="">pays
         <optgroup label="Votre pays">
-            <option value="Votre pays">Tunisie</option>
+            <option value="Votre pays">Votre pays</option>
         </optgroup>
     </select>
 </span>
@@ -184,7 +190,7 @@
 <br><br>
 
 <strong style="position: relative; top:50px;" >Application(s)</strong>
-<br>
+<br><br><br>
 <span style="margin: 72px "></span>
     <select id="search" name="search" size="5">
         <option value="option1">Bureautique</option>
